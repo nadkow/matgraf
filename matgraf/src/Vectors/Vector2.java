@@ -27,4 +27,12 @@ public class Vector2 {
         this.x += v.getX();
         this.y += v.getY();
     }
+
+    @Override
+    public String toString() {
+        return "Vector2{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

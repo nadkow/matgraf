@@ -35,4 +35,13 @@ public class Vector3 {
         this.y += v.getY();
         this.z += v.getZ();
     }
+
+    @Override
+    public String toString() {
+        return "Vector3{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
+    }
 }
