@@ -36,6 +36,12 @@ public class Vector3 {
         this.z += v.getZ();
     }
 
+    public void sub(Vector3 v) {
+        this.x -= v.getX();
+        this.y -= v.getY();
+        this.z -= v.getZ();
+    }
+
     @Override
     public String toString() {
         return "Vector3{" +

@@ -28,6 +28,11 @@ public class Vector2 {
         this.y += v.getY();
     }
 
+    public void sub(Vector2 v) {
+        this.x -= v.getX();
+        this.y -= v.getY();
+    }
+
     @Override
     public String toString() {
         return "Vector2{" +
