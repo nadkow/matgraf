@@ -21,7 +21,11 @@ public class Vector3 {
         this.x = v.x;
         this.y = v.y;
         this.z = v.z;
-        calcLen();
+        this.length = v.length;
+    }
+
+    public Vector3(Vector2 v) {
+        this(v.getX(), v.getY(), 0.0f);
     }
 
     public float getX() {
