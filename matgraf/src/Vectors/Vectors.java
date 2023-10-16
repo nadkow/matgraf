@@ -67,4 +67,12 @@ public abstract class Vectors {
         double cosfi = dotProduct(v1, v2) / (v1.getLength() * v2.getLength());
         return acos(cosfi);
     }
+
+    public static double angleDeg(Vector3 v1, Vector3 v2) {
+        return angle(v1, v2) * 57.2957795; // approximation of 180 / pi
+    }
+
+    public static double angleDeg(Vector2 v1, Vector2 v2) {
+        return angle(v1, v2) * 57.2957795; // approximation of 180 / pi
+    }
 }
