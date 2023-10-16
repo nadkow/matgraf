@@ -17,4 +17,28 @@ public abstract class Vectors {
     public static Vector3 sub(Vector3 v1, Vector3 v2) {
         return new Vector3(v1.getX() - v2.getX(), v1.getY() - v2.getY(), v1.getZ() - v2.getZ());
     }
+
+    public static Vector2 div(Vector2 v, float f) {
+        return new Vector2(v.getX() / f, v.getY() / f);
+    }
+
+    public static Vector3 div(Vector3 v, float f) {
+        return new Vector3(v.getX() / f, v.getY() / f, v.getZ() / f);
+    }
+
+    public static Vector2 mult(Vector2 v, float f) {
+        return new Vector2(v.getX() * f, v.getY() * f);
+    }
+
+    public static Vector3 mult(Vector3 v, float f) {
+        return new Vector3(v.getX() * f, v.getY() * f, v.getZ() * f);
+    }
+
+    public static Vector2 normalized(Vector2 v) {
+        return new Vector2(v.getX()/v.getLength(), v.getY()/v.getLength());
+    }
+
+    public static Vector3 normalized(Vector3 v) {
+        return new Vector3(v.getX()/v.getLength(), v.getY()/v.getLength(), v.getZ()/v.getLength());
+    }
 }
